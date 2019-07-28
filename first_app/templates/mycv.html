@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+    add
+{% endblock %}
+
+{% block body %}
+    <h1>{{ name }}</h1>
+    <ul>
+    <!--<p>skill : {{ skill }}</p>-->
+    {% for skill in skill %}
+        <li>
+    {{ skill }}
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+

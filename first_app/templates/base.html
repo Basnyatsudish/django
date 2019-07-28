@@ -1,0 +1,39 @@
+<html>
+<head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+
+
+</head>
+<body >
+<div class="jumbotron">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="navbar-brand" href="">Website With Django  | </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="../cv">Cv</a></li>
+      <li><a href="../add">Add</a></li>
+      <li><a href="../hello">Hello</a></li>
+      <li><a href="../comment">Comment</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container jumbotron">
+    {% block body %}
+
+
+
+    {% endblock %}
+</div>
+</div>
+</body>
+</html>
